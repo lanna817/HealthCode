@@ -1,9 +1,5 @@
 body {
-  margin: 0 auto;
-  background-image: url("Assort-foods.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  
+  margin: 0;
 }
  
  nav {
@@ -20,13 +16,22 @@ body {
   color: white;
 }
 
+#middle {
+  background-image: url("Assort-foods.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 700px;
+}
 
 main {
   text-align: center;
 }
 
 h1 {
-  margin: 75px auto 15px auto;
+
+  margin: 0 auto;
   font-weight: bold;
   font-style: italic;
   font-size: 100px;
@@ -61,15 +66,52 @@ footer {
   font-size: 25px;
   background-color:#2E393A;
   text-align: center;
-  color: white;
   padding: 8px;
-  position: absolute;
   bottom: 0;
-  width: 100%
+  width: 100%;
+  position: fixed;
+}
+
+#bottom {
+
+  text-align: center;
 }
 
 h2 {
+  text-align: left;
+  font-size: 35px;
+  color: black;
+}
+
+h3 {
+  text-align: left;
+  font-size: 25px;
+  color: black;
+}
+
+p{
+
+  text-align: left;
+  color: black;
+
+}
+
+ #restmov {
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 20px;
+} 
+
+
+.codeRed {
+  color:red;
   font-size: 60px;
-  color: white;
+}
+
+.card {
+  display: flex;
+  border: solid;
+  padding: 2px 16px;
+  flex-direction: column;
 }
