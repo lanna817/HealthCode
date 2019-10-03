@@ -22,7 +22,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 700px;
+  height: 850px;
+  
+
 }
 
 main {
@@ -84,24 +86,25 @@ h2 {
 }
 
 h3 {
-  text-align: left;
+  text-align: center;
   font-size: 25px;
   color: black;
 }
 
 p{
 
-  text-align: left;
+  text-align: center;
   color: black;
+  font-size: 25px;
 
 }
 
- #restmov {
-  text-align: center;
+ /* #restmov {
+  background-color: #CACECC;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   padding: 20px;
-} 
+}  */
 
 
 .codeRed {
@@ -109,9 +112,58 @@ p{
   font-size: 60px;
 }
 
-.card {
-  display: flex;
-  border: solid;
+.restmov{
+  
   padding: 2px 16px;
-  flex-direction: column;
+  background-color: transparent;
+  width: 500px;
+  height: 400px; 
+  perspective: 1000px;
+  position: absolute;
 }
+
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+}
+
+.restmov:hover .flip-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-front, .flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  
+}
+
+.flip-front {
+  background-color: rgb(29, 18, 82);
+  color: rgb(56, 21, 21);
+}
+
+
+.flip-back {
+  background-color: dodgerblue;
+  color: rgb(100, 64, 64);
+  transform: rotateX(180deg);
+}
+
+.flip-inner .restmov {
+
+  transform-origin: 100% 213.5px;
+}
+
+/* .card:hover {
+  
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+    
+  } */
