@@ -23,7 +23,6 @@ body {
   background-position: center;
   width: 100%;
   height: 850px;
-  
 
 }
 
@@ -79,23 +78,46 @@ footer {
   text-align: center;
 }
 
+/* score.html styling*/
+
 h2 {
-  text-align: left;
-  font-size: 35px;
-  color: black;
+  text-align: center;
+  font-size: 55px;
+  font-family: 'Finger Paint', cursive;
+  
 }
+
+.scorepage {
+
+  background-color: #8A9EA1;
+}
+
+/*score.html end styling*/
+
+#restname {
+
+  text-align: center;
+  font-size: 45px;
+  color: #DFD0B1;
+  
+
+}
+
+
 
 h3 {
   text-align: center;
-  font-size: 25px;
-  color: black;
+  color: #DFD0B1;
 }
 
 p{
 
   text-align: center;
-  color: black;
-  font-size: 25px;
+  color: #DFD0B1;
+  font-size: 40px;
+  font-family: 'Special Elite', cursive;
+  padding: 15px auto;
+  font-size: 30px;
 
 }
 
@@ -107,19 +129,20 @@ p{
 }  */
 
 
+
 .codeRed {
   color:red;
-  font-size: 60px;
+  font-size: 80px;
+  font-family: 'Finger Paint', cursive;
 }
 
 .restmov{
-  
-  padding: 2px 16px;
+  margin: 0 auto;
+  position: relative;
   background-color: transparent;
-  width: 500px;
+  width: 700px;
   height: 400px; 
   perspective: 1000px;
-  position: absolute;
 }
 
 
@@ -131,11 +154,17 @@ p{
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  
 }
 
-.restmov:hover .flip-inner {
+.flippy {
   transform: rotateX(180deg);
-}
+  }
+
+
+/* .restmov:hover .flip-inner {
+  transform: rotateY(180deg);
+} */
 
 .flip-front, .flip-back {
   position: absolute;
@@ -146,21 +175,19 @@ p{
 }
 
 .flip-front {
-  background-color: rgb(29, 18, 82);
-  color: rgb(56, 21, 21);
+  background-color:#313132;
 }
 
 
 .flip-back {
-  background-color: dodgerblue;
-  color: rgb(100, 64, 64);
+  background-color: #313132;
   transform: rotateX(180deg);
 }
 
-.flip-inner .restmov {
+/* .flip-inner .restmov {
 
   transform-origin: 100% 213.5px;
-}
+} */
 
 /* .card:hover {
   
