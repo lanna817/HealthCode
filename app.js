@@ -1,6 +1,8 @@
 const input = document.querySelector("#zip")
 const button = document.querySelector("button")
 const searchBox = document.querySelector(".restmov")
+const pageOne = document.querySelector("#page-one")
+const pageTwo = document.querySelector("#page-two")
 
 
 button.addEventListener("click", async () => {
@@ -11,26 +13,27 @@ button.addEventListener("click", async () => {
     return { name: restaurant.dba, grade: restaurant.grade, description: restaurant.violation_description }
   });
 
-  console.log(response)
-  console.log(restaurants)
+  // console.log(response)
+  // console.log(restaurants)
 
 
   restaurants.map(restaurant => {
     let searchRes = document.createElement('div');
-    searchRes.className += "flip-inner";
-    // display.innerHTML += `<p>Name: ${restaurant.name}</p><p>Grade: ${restaurant.grade}</p><p>Violation: ${restaurant.description}</p>`
+    searchBox.className += "flip-inner";
+    // searchBox.innerHTML += `<div class="flip-front"><h2 id="restname">${restaurant.name}</h2></div> 
+    // <div class="flip-back"><h3 class="codeRed">Offense:</h3> <p>${restaurant.description}</p></div>`
     searchRes.innerHTML += `<div class="flip-front"><h2 id="restname">${restaurant.name}</h2></div> <div class="flip-back"><h3 class="codeRed">Offense:</h3><p> ${restaurant.description}</p></div>`
     searchBox.append(searchRes)
 
-    document.querySelector('.restmov').scrollIntoView({ behavior: 'smooth' })
-
-
+    pageOne.style.display = "none"
+    pageTwo.style.display = "block"
+    
   })
-
-  let card = document.querySelector("flip-inner")
+  
+  let card = document.querySelector(".flip-inner")
   card.addEventListener('click', async () => {
     card.classList.toggle('flippy');
-
+    
 
   })
 
