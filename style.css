@@ -8,7 +8,6 @@ body {
   padding: 18px;
   display: flex;
   justify-content: space-around;
-  width: 100%;
   /*position: fixed; */
 
 }
@@ -30,7 +29,7 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 850px;
+  height: 1000px;
 
 }
 
@@ -174,7 +173,7 @@ h3 {
   margin: 0 auto;
   position: relative;
   background-color: transparent;
-  width: 700px;
+  width: 680px;
   height: 400px; 
   perspective: 1000px;
 }
@@ -215,141 +214,107 @@ h3 {
 }
 
 
+@media only screen and (max-width:375px)  {
 
-  @media only screen and (max-width:375px)  {
+  h1 {
 
-    h1 {
+    font-size: 40px;
+    position: relative;
+    color: white;
+    top: 80px;
+    padding: 0;
 
-      font-size: 40px;
-      position: relative;
-      color: white;
-      top: 80px;
-      padding: 0;
+  }
 
-    }
+  h2 {
 
-    h2 {
+    font-size: 35px;
+  }
 
-      font-size: 35px;
-    }
+  #restname {
+    position: relative;
+    font-size: 35px;
+    top: 40px;
+  }
 
-    #restname {
-      position: relative;
-      font-size: 35px;
-      top: 40px;
-    }
+  input {
 
-    input {
+    width: 100px;
+    position: relative;
+    font-size: 10px;
+    top: 90px;
+  }
 
-      width: 100px;
-      position: relative;
-      font-size: 10px;
-      top: 90px;
-    }
+  button { 
 
-    button { 
+    width: 100px;
+    position: relative;
+    font-size: 10px;
+    top: 90px;
+  }
 
-      width: 100px;
-      position: relative;
-      font-size: 10px;
-      top: 90px;
-    }
+  .restmov {
 
-    .restmov {
+    position: relative;
+    width: 100%;
 
-      position: relative;
-      width: 100%;
+  }
+  .codeRed {
+    font-size: 37px;
 
-    }
-    .codeRed {
-      font-size: 37px;
+  }
 
-    }
+  #desc {
+    position: relative;
+    font-size: 20px;
 
-    #desc {
-      position: relative;
-      font-size: 20px;
-
-    }
+  }
 
 
 .scinfo {
-  color:#3A9ABA;
-  font-size: 30px;
+color:#3A9ABA;
+font-size: 30px;
 
 }
 
 #streetAdd {
 
-  font-size: 25px;
-  position: relative;
-  top: 80px;
+font-size: 25px;
+position: relative;
+top: 80px;
 
 }
 
 p {
-  font-size: 19px;
+font-size: 19px;
 }
-  
+
 footer {
 
-  padding: 0;
+padding: 0;
 }
-  }
-
-  /*Phones with larger pixels*/
-
-  @media only screen and (max-width:1600px) {
-    h1 {
-
-      font-size: 40px;
-      position: relative;
-      color: white;
-      top: 60px;
-
-    }
-
-    h2 {
-
-      font-size: 35px;
-    }
-  
-footer {
-
-  padding: 0;
 }
 
 
-input {
-  position: relative;
-  font-size: 10px;
-  top: 90px;
-}
+@media only screen and (max-width:320px) {
 
-button { 
-  position: relative;
-  font-size: 10px;
-  top: 90px;
-}
+  h1 {
+
+    font-size: 35px;
+    position: relative;
+    color: white;
+    top: 60px;
 
   }
 
-  @media only screen and (max-width:330px) {
-
-    h1 {
-
-      font-size: 35px;
-      position: relative;
-      color: white;
-      top: 60px;
-
-    }
-
-    p {
-      font-size: 15px;
-    }
-
-
+  p {
+    font-size: 15px;
   }
 
+  .restmov {
 
+    width: 300px;
+    height: 400px;
+  }
+
+}
