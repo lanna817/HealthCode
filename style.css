@@ -17,6 +17,11 @@ body {
 
 }
 
+a:hover {
+
+  color: black;
+}
+
 #middle {
   background-image: url("Assort-foods.jpg");
   background-size: cover;
@@ -39,10 +44,12 @@ h1 {
   font-size: 100px;
   color:rgb(28, 88, 109);
   font-family: 'Finger Paint', cursive;
+  padding: 40px;
 }
 
 .danger {
 
+  font-family: 'Finger Paint', cursive;
   color: red;
 }
 
@@ -72,6 +79,7 @@ footer {
   bottom: 0;
   width: 100%;
   position: fixed;
+  color: white;
 }
 
 
@@ -93,16 +101,26 @@ h2 {
 p {
   font-size: 25px;
   padding: 10px;
-
+  font-family: 'Lato', sans-serif;  
 
 }
 
 p a{
   text-decoration: none;
-  color:#3A9ABA;
   font-weight: bold;
 }
 
+
+.scinfo {
+  color:#3A9ABA;
+  font-size: 40px;
+
+}
+
+.scinfo:hover {
+
+  color: black;
+}
 
 
 /*score.html end styling*/
@@ -145,18 +163,9 @@ h3 {
 }
 
 
- /* #restmov {
-  background-color: #CACECC;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  padding: 20px;
-}  */
-
-
-
 .codeRed {
   color:red;
-  font-size: 80px;
+  font-size: 40px;
   font-family: 'Finger Paint', cursive;
 }
 
@@ -181,10 +190,6 @@ h3 {
   
 }
 
-/* .flippy {
-  transform: rotateX(180deg);
-  } */
-
 
  .flip-inner:hover {
   transform: rotateY(180deg);
@@ -208,16 +213,7 @@ h3 {
   transform: rotateY(180deg);
 }
 
-/* .flip-inner .restmov {
 
-  transform-origin: 100% 213.5px;
-} */
-
-/* .card:hover {
-  
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
-    
-  } */
 
   @media only screen and (max-width:375px)  {
 
@@ -225,13 +221,21 @@ h3 {
 
       font-size: 43px;
       position: relative;
-      top: 40px;
+      color: white;
+      top: 80px;
+      padding: 0;
 
+    }
+
+    h2 {
+
+      font-size: 40px;
     }
 
     #restname {
       position: relative;
-      font-size: 20px;
+      font-size: 35px;
+      top: 40px;
     }
 
     input {
@@ -239,7 +243,7 @@ h3 {
       width: 100px;
       position: relative;
       font-size: 10px;
-      top: 60px;
+      top: 90px;
     }
 
     button { 
@@ -247,7 +251,7 @@ h3 {
       width: 100px;
       position: relative;
       font-size: 10px;
-      top: 60px;
+      top: 90px;
     }
 
     .restmov {
@@ -267,9 +271,84 @@ h3 {
 
     }
 
- 
 
- 
+.scinfo {
+  color:#3A9ABA;
+  font-size: 30px;
+
+}
+
+#streetAdd {
+
+  font-size: 25px;
+  position: relative;
+  top: 80px;
+
+}
+
+p {
+  font-size: 19px;
+}
   
-  
+footer {
+
+  padding: 0;
+}
   }
+
+  /*Phones with larger pixels*/
+
+  @media only screen and (max-width:500px) {
+    h1 {
+
+      font-size: 42px;
+      position: relative;
+      color: white;
+      top: 60px;
+
+    }
+
+    h2 {
+
+      font-size: 35px;
+    }
+  
+footer {
+
+  padding: 0;
+}
+
+
+input {
+  position: relative;
+  font-size: 10px;
+  top: 90px;
+}
+
+button { 
+  position: relative;
+  font-size: 10px;
+  top: 90px;
+}
+
+  }
+
+  @media only screen and (max-width:340px) {
+
+    h1 {
+
+      font-size: 35px;
+      position: relative;
+      color: white;
+      top: 60px;
+
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+
+  }
+
+
