@@ -175,7 +175,6 @@ h3 {
   background-color: transparent;
   width: 680px;
   height: 400px; 
-  perspective: 1000px;
 }
 
 
@@ -192,7 +191,7 @@ h3 {
 
 
  .flip-inner:hover {
-  transform: rotateY(180deg);
+  transform: rotateX(180deg);
 }
 
 .flip-front, .flip-back {
@@ -210,7 +209,7 @@ h3 {
 
 .flip-back {
   background-color: #313132;
-  transform: rotateY(180deg);
+  transform: rotateX(180deg);
 }
 
 
