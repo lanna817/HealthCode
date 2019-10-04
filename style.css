@@ -8,6 +8,8 @@ body {
   padding: 18px;
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  /*position: fixed; */
 
 }
 
@@ -75,7 +77,6 @@ footer {
   font-size: 25px;
   background-color:#2E393A;
   text-align: center;
-  padding: 8px;
   bottom: 0;
   width: 100%;
   position: fixed;
@@ -219,7 +220,7 @@ h3 {
 
     h1 {
 
-      font-size: 43px;
+      font-size: 40px;
       position: relative;
       color: white;
       top: 80px;
@@ -229,7 +230,7 @@ h3 {
 
     h2 {
 
-      font-size: 40px;
+      font-size: 35px;
     }
 
     #restname {
@@ -298,10 +299,10 @@ footer {
 
   /*Phones with larger pixels*/
 
-  @media only screen and (max-width:500px) {
+  @media only screen and (max-width:1600px) {
     h1 {
 
-      font-size: 42px;
+      font-size: 40px;
       position: relative;
       color: white;
       top: 60px;
@@ -333,7 +334,7 @@ button {
 
   }
 
-  @media only screen and (max-width:340px) {
+  @media only screen and (max-width:330px) {
 
     h1 {
 
